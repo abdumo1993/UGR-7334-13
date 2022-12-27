@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+  <header ><section class="logoT"><img src="image/logo.png" alt="site logo" width="50px" height="50px" class="logo"> <h1 class="siteTitle">EthioTour</h1></section>
+        
+    <nav>
+     <a href="home.html">HOME</a> |
+     <a href="landsite.html">LAND SITES</a> |
+     <a href="waterbodies.html">WATER BODIS</a> |
+     <a href="wildlife.html">WILD LIFE</a></li>    
+    </nav>
+    
+</header>
+        <main>
+            <h1>Welcome to EthioTour</h1>
+            <p>EthioTour is a site that provide an initial insite into the tourism sites in ethiopia. from sites that are mainly land based like parks and sanctuaries to water based sites like lakes and rivers as well as some known endemic wild life to look for when you are visiting Ethiopia.</p>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 3</div>
+                  <img src="image/simien.png" alt="simien mountain park" width="25%" height="200px"><img src="image/omo.png" alt="Omo national park"  width="25%" height="200px"><img src="image/nachisar.png" alt="nachisar national park"  width="25%" height="200px"><img src="image/abijjata.png" alt="abijjata-shalla park"  width="25%" height="200px">
+                  <div class="text">land sites</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 3</div>
+                  <img src="image/tana.png" alt="tana lake"  width="25%" height="200px"><img src="image/langano.png" alt="langano lake" width="25%" height="200px"><img src="image/awass.png" alt="Awassa lake" width="25%" height="200px"><img src="image/nile.png" alt="blue nile river"width="25%" height="200px">
+                  <div class="text">water bodies</div>
+                </div>
+                
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 3</div>
+                  <img src="image/waliya.png" alt="waliya" width="25%" height="200px"><img src="image/ethio_fox.png" alt="ethiopian red fox" width="25%" height="200px"><img src="image/White-necked-Raven.png" alt="white necked raven" width="25%" height="200px"><img src="image/chillada.png" alt="chillada baboon" width="25%" height="200px">
+                  <div class="text">wild life</div>
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+                
+                </div>
+                <br>
+                
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span> 
+                  <span class="dot" onclick="currentSlide(2)"></span> 
+                  <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                }
+                </script>
+        </main>
+        <br>
+        <hr>
+        <div>
+            <form action="home.html">
+                <label for="name">name: </label>
+                <input type="text" id="name" name="name"><br>
+                <label for="subject">subject : </label>
+                <input type="text" id="subject" name="subject"><br>
+                <label for="comment">comment: </label>
+                <input type="text" id="comment" name="comment">
+                <input type="submit" value="Submit">
+              </form>
+        </div>
+        <hr>
+
+            <footer class="foot">
+        <img src="image/logo.png" alt="site logo" width="50px" height="50px">
+        <p>copyright@ 2022 Addis Ababa, Ethiopia</p>
+        <nav>
+          <a href="home.html">home</a> |
+          <a href="about.html">about</a> |
+          <a href="contact.html">contact us</a>
+        </nav>
+    </footer>
+</body>
+</html>
