@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home Page</title>
+
+</head>
+<body>
+  <header class="header">
+
+    <div class="logo"><a href="index.html"><img src="image/logo.png" alt="site logo" width="100px" height="100px"></a></div>
+    <a href="index.html"><h1 class="siteTitle">EthioTour</h1></a>
+    
+    <nav class="header-nav">
+     <button class="nav "><a class="navbutton" href="index.html">HOME</a></button>
+     <button class="nav "><a class="navbutton" href="landsite.html">LAND SITES</a></button>
+     <button class="nav "><a class="navbutton" href="waterbodies.html">WATER BODIES</a></button>
+     <button class="nav "><a class="navbutton" href="wildlife.html">WILD LIFE</a></button>    
+    </nav>
+    
+</header>
+        <main>
+            <h1>Welcome to EthioTour</h1>
+            <p>EthioTour is a site that provide an initial insite into the tourism sites in ethiopia. from sites that are mainly land based like parks and sanctuaries to water based sites like lakes and rivers as well as some known endemic wild life to look for when you are visiting Ethiopia.</p>
+            <section class="slideshow-container">
+
+                <section class="mySlides fade">
+                  <section class="numbertext">1 / 3</section>
+                  <a href="landsite.html"></a><img src="image/simien.png" alt="simien mountain park" width="25%" height="200px"><img src="image/omo.png" alt="Omo national park"  width="25%" height="200px"><img src="image/nachisar.png" alt="nachisar national park"  width="25%" height="200px"><img src="image/abijjata.png" alt="abijjata-shalla park"  width="25%" height="200px"></a>
+                  <section class="text">land sites</section>
+                </section>
+                
+                <section class="mySlides fade">
+                  <section class="numbertext">2 / 3</section>
+                  <a href="waterbodies.html"><img src="image/tana.png" alt="tana lake"  width="25%" height="200px"><img src="image/langano.png" alt="langano lake" width="25%" height="200px"><img src="image/awass.png" alt="Awassa lake" width="25%" height="200px"><img src="image/nile.png" alt="blue nile river"width="25%" height="200px"></a>
+                  <section class="text">water bodies</section>
+                </section>
+                
+                <section class="mySlides fade">
+                  <section class="numbertext">3 / 3</section>
+                  <a href="wildlife.html"><img src="image/waliya.png" alt="waliya" width="25%" height="200px"><img src="image/ethio_fox.png" alt="ethiopian red fox" width="25%" height="200px"><img src="image/White-necked-Raven.png" alt="white necked raven" width="25%" height="200px"><img src="image/chillada.png" alt="chillada baboon" width="25%" height="200px"></a>
+                  <section class="text">wild life</section>
+                </section>
+                <button class="prev" onclick="plusSlides(-1)" >❮</button>
+                
+                <button class="next" onclick="plusSlides(1)">❯</a>
+                
+                </section>
+                <br>
+                
+              
+                
+                <script>
+                let slideIndex = 1;
+                showSlides(slideIndex);
+                
+                function plusSlides(n) {
+                  showSlides(slideIndex += n);
+                }
+                
+                function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                }
+                
+                function showSlides(n) {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  
+                  if (n > slides.length) {slideIndex = 1}    
+                  if (n < 1) {slideIndex = slides.length}
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  
+                  slides[slideIndex-1].style.display = "block";  
+                  
+                }
+                </script>
+        </main>
+        <br>
+        <hr>
+        <section>
+            <form name="myForm" class="myForm" onsubmit="return validateForm()">
+              Name: <input type="text" name="name">
+              
+              comment: <input type="text" name="comment">
+        
+              <p></p>  <input type="submit" value="Submit">
+              </form>
+              
+              <script>
+                function validateForm() {
+                  let x = document.forms["myForm"]["name"].value;
+                  
+                  let y = document.forms["myForm"]["comment"].value;
+                  if (x == "") {
+                    alert("Name must be filled out");
+                    return false;
+                  }
+                  
+                  else if (y == "") {
+                    alert("comment must be filled out");
+                    return false;
+                  }
+                  
+                }
+                </script>
+        </section>
+        <hr>
+
+        <footer class="footer">
+          <div class="logo"><a href="index.html"><img src="image/logo.png" alt="site logo" width="100px" height="100px"></a></div>
+          <div>copyright@ 2022 Addis Ababa, Ethiopia</div>
+          <nav class="navfoot">
+            <a href="index.html">home</a> |
+            <a href="about.html">about</a> |
+            <a href="contact.html">contact us</a>
+          </nav>
+      </footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+
+ @media only screen and (max-width: 768px) {
+  .slide_small{
+    display:flexbox;
+    flex-direction: column;
+    flex-flow: column;
+  }
+  .slide_item{
+    border:2px 1px;
+    padding:5px;
+    width:auto;
+    height:auto;
+  }
+
+  nav.header-nav{
+    max-width: 540px;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: center;
+    border:5px red;
+    padding:none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav.header-nav{
+      max-width: 300px;
+      
+      display:flex;
+      flex-direction: column;
+      
+      
+      padding:none;
+    }
+  }
+     
+
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+  .slide_large{
+    display:grid;
+    grid-template-columns: auto auto;
+    padding:10px;
+  }
+  .slide_item{
+    border:2px 1px;
+    padding:5px;
+    width:auto;
+    height:auto;
+    
+
+  }
+  nav.header-nav{
+    max-width: 540px;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: center;
+    border:5px red;
+    padding:none;
+  }
+}
+.slideshow-container{
+  position:relative;
+  width:100%;
+  height:auto;
+  border:1px solid black;
+}
+
+
+
+button.prev{
+  position:absolute;
+  left:0px;
+  top:35%;
+  background:hsla(0, 15%, 50%, 0.2);
+  width:50px;
+  height:30%;
+  border:none;
+  
+}
+button.next{
+  position:absolute;
+  right:0px;
+  top:35%;
+  background-color:hsla(0, 15%, 50%, 0.2);
+  width:50px;
+  height:30%;
+  border:none;
+  font-size:larger
+}
+button.prev:hover, button.next:hover{
+  background-color:rgb(100,100,100);
+}
+img.slide_img{
+  max-width:250px;
+  max-height:300px;
+}
+  .header{
+    background-color: #282A35;
+    height:auto;
+  }
+  
+ 
+  .logo{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    padding:0px;
+
+  }
+  .siteTitle{
+    text-align: center;
+    color:white;
+  }
+ 
+  a.navbutton {
+    
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    
+  }
+  button.nav{
+    background-color: white;
+    border:2px solid green;
+    height: 36px;
+    
+
+  }
+  button.nav:hover{
+    background-color: green;
+    
+  }
+
+ 
+  section.about_us > div{
+    max-width: 600px;
+    height:auto;
+    text-align: left;
+    margin:auto;
+    border:1px solid black;
+    padding:5px;
+
+  }
+  
+  section.about_us > h1{
+    text-align: center;
+  }
+  .footer{
+    background-color: silver;
+    padding:40px;
+    margin-top:10px;
+  }
+  .footer>div{
+    text-align: center;
+  }
+  .navfoot{
+    text-align: center;
+  }
+  .myForm{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    border: 2px solid black;
+    max-width:700px;
+
+  }
+  
