@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+  <title>Home Page</title>
+
+</head>
+<body>
+  <header class="page-header">
+
+    <div class="logo"><a href="index.html"><img src="image/logo.png" alt="site logo" width="100px" height="100px"></a></div>
+
+    
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="index.html">EthioTour</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="landsite.html">landsite</a></li>
+            <li><a href="waterbodies.html">WaterBodies</a></li>
+            <li><a href="wildlife.html">WildLife</a></li>
+            
+          </ul>
+          
+        </div>
+      </div>
+    </nav>
+    
+</header>
+        <main class="text-center">
+            <h1 >Welcome to EthioTour</h1>
+            <p>EthioTour is a site that provide an initial insite into the tourism sites in ethiopia. from sites that are mainly land based like parks and sanctuaries to water based sites like lakes and rivers as well as some known endemic wild life to look for when you are visiting Ethiopia.</p>
+            <div id="myCarousel" class="carousel slide container" data-ride="carousel">
+              <!-- Indicators -->
+              
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active" style="background-color:black;" ></li>
+                <li data-target="#myCarousel" data-slide-to="1" style="background-color:black;"></li>
+                <li data-target="#myCarousel" data-slide-to="2" style="background-color:black;"></li>
+              </ol>
+            
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner">
+                <div class="item active">
+                  <a href="landsite.html"></a><img src="image/simien.png" class="col-sm-6 col-xs-12 " alt="simien mountain park" width="200px" height="200px"><img src="image/omo.png" class="col-sm-6 col-xs-12 " alt="Omo national park"  width="200px" height="200px"></a>
+                </div>
+            
+                <div class="item">
+                  <a href="waterbodies.html"><img src="image/tana.png" class="col-sm-6 col-xs-12 " alt="tana lake"  width="200px" height="200px"><img src="image/langano.png" class="col-sm-6 col-xs-12 " alt="langano lake" width="200px" height="200px"></a>
+                </div>
+            
+                <div class="item">
+                  <a href="wildlife.html"><img src="image/waliya.png"  class="col-sm-6 col-xs-12 " alt="waliya" width="200px" height="200px"><img src="image/ethio_fox.png" alt="ethiopian red fox" class="col-sm-6 col-xs-12 " width="200px" height="200px"></a>
+                </div>
+              </div>
+            
+              <!-- Left and right controls -->
+              <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+                <br>
+                
+              
+                
+                
+        </main>
+        <br>
+        <hr>
+        <div class="container-fluid">
+          <h2>Comment Section</h2>
+          <form class="form-horizontal" action="index.html">
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="email">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-2" for="comment">Comment:</label>
+              <div class="col-sm-10">
+                <input type="text" class="form-control" id="comment" placeholder="write comment...">
+              </div>
+            </div>
+            
+              <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-default" >Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <hr>
+
+        <footer class="jumbotron text-center">
+          <div class="logo"><a href="index.html"><img src="image/logo.png" alt="site logo" width="100px" height="100px"></a></div>
+          <div>copyright@ 2022 Addis Ababa, Ethiopia</div>
+          <nav class="navfoot">
+            <a href="index.html">home</a> |
+            <a href="about.html">about</a> |
+            <a href="contact.html">contact us</a>
+          </nav>
+      </footer>
+</body>
+</html>
